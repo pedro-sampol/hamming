@@ -11,9 +11,13 @@ extern const int P8[];
 extern const int P16[];
 extern const int DADOS[];
 
+void montaByte (unsigned char bytes[], unsigned char envio[], int numBytes);
+
 void coletaBits (unsigned char temp[], unsigned char lidos[], int tamLidos);
 
 int hammingCode (unsigned char codigo[], const int P[]);
+
+void hammingDecode (unsigned char lidos[]);
 
 void zeraVetor (unsigned char vetor[], int n);
 

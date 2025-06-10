@@ -1,0 +1,11 @@
+para compilar codificador
+make encode
+
+para executar codificador
+make encode_run
+
+para compilar decodificador
+make decode
+
+para executar decodificador
+make decode_run

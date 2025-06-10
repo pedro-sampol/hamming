@@ -42,9 +42,10 @@ int main(int argc, char *argv[]) {
 	// inicia a decodificação e transferencia de dados
 	while (1) {	
 		zeraVetor (bytes, 4);
-		
 		tamLidos = 0;
 		bit = 0;
+		
+		// transforma ASCII nos bits 0 e 1
 		while (bit != ' ' && bit != EOF) {
 			bit = fgetc(entrada);
 			if (bit == '0') {
